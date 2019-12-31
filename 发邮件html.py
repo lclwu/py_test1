@@ -27,7 +27,7 @@ def email_html(email_title,email_text):
 if __name__=="__main__":
     a="""
      <p>这是一个美丽的故事</p>
-     <a href="https://www.baidu.com">小明</a>
+     <a href="https://www.baidu.com" a>小明</a>
     """
     email_html("美丽",a)
 
