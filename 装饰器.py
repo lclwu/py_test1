@@ -7,6 +7,7 @@ def my_object(keys):#装饰器参数
             print(time.time())
             a=func(*args)#装饰
             print(time.time())
+            print(keys)
             return a
         return my_cresdit
     return my_func
