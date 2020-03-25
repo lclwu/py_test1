@@ -1,0 +1,46 @@
+# iview-admin
+*.bak
+iview-admin/yarn.lock
+
+iview-admin/.DS_Store
+iview-admin/node_modules
+iview-admin/dist
+iview-admin/dist.zip
+
+iview-admin/tests/e2e/videos/
+iview-admin/tests/e2e/screenshots/
+
+# local env files
+iview-admin/.env.local
+iview-admin/.env.*.local
+
+# Log files
+iview-admin/npm-debug.log*
+iview-admin/yarn-debug.log*
+iview-admin/yarn-error.log*
+
+# Editor directories and files
+iview-admin/.idea
+iview-admin/.vscode
+iview-admin/*.suo
+iview-admin/*.ntvs*
+iview-admin/*.njsproj
+iview-admin/*.sln
+iview-admin/*.sw*
+
+iview-admin/build/env.js
+
+
+
+
+# tutorial
+
+tutorial/*.log
+tutorial/uwsgi.pid
+tutorial/nohup.out
+tutorial/static
+tutorial/.idea
+tutorial/snippets/migrations
+*.pyc
+django4-*.sql
+tutorial/Pipfile
