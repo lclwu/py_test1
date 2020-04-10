@@ -5,11 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<a href="">新文章</a>
+<a href="{% url 'blog:page' 0 %}">新文章</a>
 
 <ul>
 {% for use in users %}
-<a href="">{{ use.titel_name }}</a>
+<a href="{% url 'blog:aticel' use.id_name %}">{{ use.titel_name }}</a>
 </br>
 
 {% endfor %}
