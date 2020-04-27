@@ -1,5 +1,5 @@
-import cif_customer_base
-import maincifdb_customer_info
+from myapp.xhqb import cif_customer_base
+from myapp.xhqb import maincifdb_customer_info
 
 """cifdb.t_customer_base表的数据"""
 def base_check_update(phone=None, identity_no=None, up_identity_no=None, up_name=None, up_phone=None):
@@ -30,7 +30,7 @@ def base_check_update(phone=None, identity_no=None, up_identity_no=None, up_name
         maincifdb_customer_info.update_info(info_base["id"],up_identity_no,up_name,up_phone)
 
 
-
+# if __name__=="__main__":
 
 
         # maincifdb_customer_info.update_info(data_base["cid"], up_identity_no, up_name, up_phone)

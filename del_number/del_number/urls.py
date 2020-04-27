@@ -16,8 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from myapp import views
+from django.conf.urls import url
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ad/', views.index),
+    url("^xhqb_index/$",views.xhqb_index),
+    # path('ad/', views.index),
+    # path('add/', views.search_from),
+    # path('search/', views.search),
+    # path('search_post/', views.search_post),
+    # path('mobler/', views.mobler_data),
+    path('mobler_find/', views.mobler_find,name='mobler_find'),
+    url('^page/',views.update_mobler,name='page'),
+    url("^msg/",views.msg_find,name="msg")
+
+
 ]

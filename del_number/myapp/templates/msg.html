@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>短信查询</title>
+</head>
+<body>
+<form action="msg_find" method="post">
+    {% csrf_token %}
+    <input type="text" name="number">
+    <input type="submit">
+</form>
+
+<label>
+    <p>手机号：{{ number }}</p>
+    <p>短信验证码：{{ send_para }}</p>
+    <p>发送时间：{{ time }}</p>
+
+</label>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/mobler_find/" method="post">
+        {% csrf_token %}
+        请输入手机号: <input type="text" name="find">
+        <input type="submit" value="搜索">
+    </form>
+
+    <p>cid:{{cid}}</p>
+    <p>名字:{{name}}</p>
+    <p>身份证号:{{identity_no}}</p>
+    <p>手机号:{{mobile_phone}}</p>
+
+    {% comment %}
+    <!--<a href="{% url 'page' mobile_phone| default:0 %}">删除</a>-->
+    {% endcomment %}
+    <form action="{% url 'page' %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="article_id" value="{{mobile_phone}}">
+        <input type="submit" value="删除">
+    </form>
+
+
+</body>
+</html>
